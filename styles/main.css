@@ -61,3 +61,18 @@ img {
   width: 300px;
   border-radius: 15px;
 }
+
+@media (max-width: 700px) {
+  * {
+    font-size: 0.75rem;
+  }
+
+  li.nav {
+    padding: 5px 10px;
+    margin: 5px 10px;
+  }
+
+  img {
+    width: 160px;
+  }
+}

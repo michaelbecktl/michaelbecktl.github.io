@@ -42,3 +42,8 @@ li.nav {
   border-radius: 30%;
   font-weight: bold;
 }
+
+table {
+  align: center;
+  border: solid;
+}

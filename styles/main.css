@@ -1,21 +1,35 @@
 * {
   background-color: blanchedalmond;
   font-family: 'Trebuchet MS', Arifsal, sans-serif;
+  box-sizing: border-box;
 }
 
 header {
   text-align: center;
-}
-
-nav {
-  text-align: center;
-  text-transform: uppercase;
+  position: sticky;
+  background-color: #ffd19f;
 }
 
 a {
   color: inherit;
   background-color: inherit;
   text-decoration: inherit;
+}
+
+h1 {
+  background-color: #ffd19f;
+  font-size: 32px;
+  border: solid;
+  border-color: #ffd19f;
+  padding: 30px;
+}
+
+.nav {
+  background-color: #ffd19f;
+  border: solid;
+  border-color: #ffd19f;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 li.nav {
@@ -27,8 +41,4 @@ li.nav {
   border-color: white;
   border-radius: 30%;
   font-weight: bold;
-}
-
-body {
-  margin: auto 10%;
 }

@@ -23,6 +23,10 @@ a {
   text-decoration: inherit;
 }
 
+a.hover:hover {
+  color: rgb(75, 73, 72);
+}
+
 h1 {
   background-color: #ffd19f;
   font-size: 32px;
@@ -30,6 +34,16 @@ h1 {
   border-color: #ffd19f;
   padding: 30px;
   margin-bottom: 0;
+}
+
+h2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h3 {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .nav {
@@ -53,11 +67,6 @@ li.nav {
 
 li.nav:hover {
   background-color: #ffaf58;
-}
-
-h2 {
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .pagetitle {
@@ -94,6 +103,21 @@ div {
   margin-left: 4em;
   margin-right: 4em;
   text-align: justify;
+}
+
+.entrytitle {
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.blogtitle {
+  margin-bottom: 0;
+}
+
+.blogdesc {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 0;
 }
 
 .flex-container {

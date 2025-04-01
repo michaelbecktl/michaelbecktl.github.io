@@ -53,6 +53,11 @@ h2 {
   margin-right: 5%;
 }
 
+.pagetitle {
+  text-align: center;
+  text-decoration: underline;
+}
+
 p {
   margin-left: 5%;
   margin-right: 5%;
@@ -90,6 +95,8 @@ div {
   gap: 2em;
 }
 
+/* Tablet Media Query */
+
 @media (max-width: 800px) {
   * {
     font-size: 0.9rem;
@@ -110,5 +117,48 @@ div {
 
   img {
     width: 160px;
+  }
+
+  .flex-container {
+    gap: 1em;
+  }
+
+  td {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+/* Phone Media Query */
+
+@media (max-width: 500px) {
+  * {
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  li.nav {
+    padding: 2px 5px;
+    margin: 2px 5px;
+  }
+
+  img {
+    width: 80px;
+  }
+
+  .flex-container {
+    gap: 0.8em;
+  }
+
+  td {
+    margin-left: 2px;
+    margin-right: 2px;
   }
 }

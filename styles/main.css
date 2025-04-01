@@ -7,11 +7,14 @@
 header {
   text-align: center;
   position: sticky;
+  top: 0;
   background-color: #ffd19f;
   border: solid;
   border-color: rgb(117, 53, 0);
   border-radius: 15px;
+  margin-top: 1em;
   margin-bottom: 2em;
+  z-index: 1;
 }
 
 a {
@@ -48,6 +51,10 @@ li.nav {
   font-weight: bold;
 }
 
+li.nav:hover {
+  background-color: #ffaf58;
+}
+
 h2 {
   margin-left: 5%;
   margin-right: 5%;
@@ -79,13 +86,13 @@ td {
 }
 
 img {
-  width: 300px;
+  max-width: 300px;
   border-radius: 15px;
 }
 
 div {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 4em;
+  margin-right: 4em;
   text-align: justify;
 }
 
@@ -93,6 +100,89 @@ div {
   display: flex;
   justify-content: space-evenly;
   gap: 2em;
+}
+
+.redbox {
+  height: 80px;
+  width: 80px;
+  background-color: red;
+  color: rgb(152, 250, 152);
+  font-weight: bold;
+  text-align: center;
+  border: solid;
+  border-color: black;
+  margin: 0px;
+}
+
+.bluebox {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  color: rgb(152, 250, 152);
+  font-weight: bold;
+  text-align: center;
+  border: solid;
+  border-color: black;
+  margin: 0px;
+}
+
+.pinkcircle {
+  height: 75px;
+  width: 75px;
+  background-color: rgb(255, 121, 199);
+  color: rgb(152, 250, 152);
+  font-weight: bold;
+  text-align: center;
+  border: solid;
+  border-color: rgb(109, 52, 83);
+  border-radius: 50%;
+  line-height: 4;
+}
+
+.biggerimg {
+  max-width: 500px;
+  display: block;
+}
+
+.hidden {
+  display: hidden;
+}
+
+#grow4 {
+  flex-grow: 4;
+}
+
+#border {
+  border: solid;
+  border-radius: 15px;
+  border-color: #ffb38a;
+  padding: 20px;
+}
+
+#static {
+  position: static;
+  /* top: 50px; */
+}
+
+#relative {
+  position: relative;
+  top: 50px;
+}
+
+#parent {
+  position: relative;
+}
+
+#child {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 
 /* Tablet Media Query */

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>michael-beck-whai-25</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+  </head>
+
+  <header>
+    <h1>Michael Beck's Blog</h1>
+    <nav>
+      <ul class="nav">
+        <li class="nav"><a href="../index.html">Home</a></li>
+        <li class="nav"><a href="../blog.html">Blog</a></li>
+        <li class="nav"><a href="../about.html">About</a></li>
+        <li class="nav"><a href="../album.html">Album</a></li>
+      </ul>
+    </nav>
+  </header>
+</html>
+
+<body>
+  <h2>CSS Concept - Positions</h2>
+  <p>
+    Using CSS, we can manipulate the placement of things using the position
+    code. To the right are examples of codes and two separate elements when
+    placed down normally. (They have been coloured and scaled down for easy
+    visuals). Contents in a webpage are shaped into boxes, and the red and blue
+    colored squares represent two contents. <br />
+    <br />
+  </p>
+  <div class="flex-container" id="border">
+    <div>
+      <h3>position: static</h3>
+      The first example, we have set these elements into "static" position. The
+      static position anchors the element into it's specific spot on the
+      webpage. This is the default settings for all CSS elements, but I've
+      included it for clarity. Notice I've also left a code comment that says
+      "top: 50px", this is suppose to move the red square down, but because the
+      position is static, theoretically this code does nothing. The squares
+      remain in their individual placements and do not collide with each other.
+    </div>
+    <div>
+      <img
+        src="screenshots/htmlcss1.jpg"
+        alt="Code Sample for Static Position"
+      />
+    </div>
+    <div>
+      <p class="redbox" id="static">Static!</p>
+      <p class="bluebox" id="static"></p>
+    </div>
+  </div>
+  <br />
+  <div class="flex-container" id="border">
+    <div id="grow4">
+      <h3>position: relative</h3>
+      For elements that have a relative position, they are nearly the same as
+      static positions except when given certain rules or code, their content
+      can be moved from their placement. <br />
+      <br />
+      Not to be confused with actually relocating them, on the contrary, based
+      on rules given to them, their content are moved <i>relative</i> to their
+      original position! The red box labelled "relative" on the right, their
+      placement is still anchored to the same spot just like the red box
+      labelled "static" on the left. But when given the "top: 50px;" rule, I've
+      displaced the content 50 pixels from the top, which allowed it to overlap
+      with the blue box below!
+    </div>
+    <div>
+      <img
+        src="screenshots/htmlcss2.jpg"
+        alt="Code Sample for Relative Position"
+      />
+    </div>
+    <div>
+      <p class="redbox" id="relative">Relative!</p>
+      <p class="bluebox"></p>
+    </div>
+  </div>
+  <br />
+  <div class="flex-container" id="border">
+    <div id="grow4">
+      <h3>position: absolute</h3>
+      Elements that have been tagged with the "absolute" position, will attach
+      themselves to another element. That said element would have to be an
+      element that also has a positioned set. What this means is if we gave the
+      red box an absolute position, and then put it in within the blue box. It
+      would sit on top of the blue box instead of taking the next space
+      available like the previous examples. <br />
+      <br />
+      In the example code on the right, in HTML and in CSS, the red box div is
+      set within the blue box div. The blue box div is also given a relative
+      position to make sure the other box's absolute position can trigger. We've
+      also set it so that the red box will sit on the bottom left corner.
+    </div>
+    <div>
+      <img
+        src="screenshots/htmlcss3.jpg"
+        alt="HTML Code Sample for Absolute Position"
+        class="biggerimg"
+      /><br />
+      <img
+        src="screenshots/htmlcss4.jpg"
+        alt="CSS Code Sample for Absolute Position"
+        class="biggerimg"
+      />
+    </div>
+    <div>
+      <div class="bluebox" id="parent">
+        <div class="redbox" id="child">Absolute!</div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="flex-container" id="border">
+    <div id="grow4">
+      <h3>position: fixed</h3>
+      For any elements attached with the fixed positioning, their position is
+      not tied to the webpage, but rather on your screen. You'll notice by now
+      there's a pink circle on the bottom left labelled "Fixed!". That pink
+      circle is not going anywhere no matter what you do! <br />
+      <br />
+      Referring to the sample code on the right, I've also added a bottom and
+      right code pinpoint where exactly I want it to stay.
+    </div>
+    <div>
+      <img
+        src="screenshots/htmlcss5.jpg"
+        alt="HTML Code Sample for Fixed Position"
+      />
+    </div>
+    <div>
+      <div class="pinkcircle" id="fixed">Fixed!</div>
+      <div class="hidden"></div>
+    </div>
+  </div>
+</body>

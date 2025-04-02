@@ -100,9 +100,14 @@ img {
 }
 
 div {
-  margin-left: 4em;
-  margin-right: 4em;
+  margin-left: 2em;
+  margin-right: 2em;
   text-align: justify;
+}
+
+div.item1 {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .entrytitle {
@@ -217,11 +222,20 @@ div {
   }
 
   h1 {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .entrytitle {
+    font-size: 24px;
+    text-decoration: underline;
+  }
+
+  .blogdesc {
+    font-size: 0.7rem;
   }
 
   li.nav {
@@ -233,13 +247,39 @@ div {
     width: 160px;
   }
 
+  div {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
   .flex-container {
-    gap: 1em;
+    gap: 0.8em;
   }
 
   td {
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  .redbox {
+    width: 50px;
+    height: 50px;
+    font-size: 0.7rem;
+  }
+
+  .bluebox {
+    width: 60px;
+    height: 60px;
+  }
+
+  .pinkcircle {
+    width: 50px;
+    height: 50px;
+  }
+
+  #relative {
+    top: 20px;
+    font-size: 0.7rem;
   }
 }
 
@@ -247,15 +287,24 @@ div {
 
 @media (max-width: 500px) {
   * {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
 
   h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+
+  .blogdesc {
+    font-size: 0.7rem;
+  }
+
+  .entrytitle {
+    font-size: 20px;
+    text-decoration: underline;
   }
 
   li.nav {
@@ -267,8 +316,13 @@ div {
     width: 80px;
   }
 
+  div {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
   .flex-container {
-    gap: 0.8em;
+    gap: 0.6em;
   }
 
   td {

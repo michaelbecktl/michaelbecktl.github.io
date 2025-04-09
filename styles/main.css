@@ -173,6 +173,12 @@ div.item1 {
   display: block;
 }
 
+.pushedIt {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 32;
+}
+
 .hidden {
   display: hidden;
 }

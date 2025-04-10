@@ -1,6 +1,20 @@
+@font-face {
+  font-family: 'Funnel Sans';
+  src: url(../Funnel_Sans/FunnelSans-VariableFont_wght.ttf) format(truetype),
+    url(../Funnel_Sans/FunnelSans-Italic-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url(../Space_Mono/SpaceMono-Regular.ttf) format(truetype),
+    url(../Space_Mono/SpaceMono-Bold.ttf) format(truetype),
+    url(../Space_Mono/SpaceMono-Italic.ttf) format(truetype),
+    url(../Space_Mono/SpaceMono-BoldItalic.ttf) format(truetype);
+}
+
 * {
   background-color: blanchedalmond;
-  font-family: 'Trebuchet MS', Arifsal, sans-serif;
+  font-family: 'Funnel Sans', 'Trebuchet MS', Arifsal, sans-serif;
   box-sizing: border-box;
 }
 
@@ -12,9 +26,13 @@ header {
   border: solid;
   border-color: rgb(117, 53, 0);
   border-radius: 15px;
-  margin-top: 1em;
-  margin-bottom: 2em;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+
   z-index: 1;
+}
+body {
+  padding: 0px 0px;
 }
 
 a {
@@ -29,7 +47,7 @@ a.hover:hover {
 
 h1 {
   background-color: #ffd19f;
-  font-size: 32px;
+  font-size: clamp(1.5rem, 8vw, 5rem);
   border: solid;
   border-color: #ffd19f;
   padding: 30px;
@@ -37,11 +55,13 @@ h1 {
 }
 
 h2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
   margin-left: 5%;
   margin-right: 5%;
 }
 
 h3 {
+  font-size: clamp(1rem, 1.5vw, 2rem);
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -95,6 +115,7 @@ td {
 }
 
 img {
+  min-width: 80px;
   max-width: 300px;
   border-radius: 15px;
 }
@@ -116,12 +137,11 @@ pre {
 }
 
 code {
-  font-family: monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 16px;
 }
 
 .entrytitle {
-  font-size: 32px;
   text-decoration: underline;
 }
 
@@ -189,7 +209,7 @@ code {
   font-size: 20px;
 }
 
-.hidden {
+.codeSample .hidden {
   display: hidden;
 }
 
@@ -233,18 +253,6 @@ code {
 /* Tablet Media Query */
 
 @media (max-width: 800px) {
-  * {
-    font-size: 0.9rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-  }
-
   .entrytitle {
     font-size: 24px;
     text-decoration: underline;
@@ -257,10 +265,6 @@ code {
   li.nav {
     padding: 5px 10px;
     margin: 5px 10px;
-  }
-
-  img {
-    width: 160px;
   }
 
   div {
@@ -302,18 +306,6 @@ code {
 /* Phone Media Query */
 
 @media (max-width: 500px) {
-  * {
-    font-size: 0.9rem;
-  }
-
-  h1 {
-    font-size: 1.75rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
   .blogdesc {
     font-size: 0.7rem;
   }
@@ -326,10 +318,6 @@ code {
   li.nav {
     padding: 2px 5px;
     margin: 2px 5px;
-  }
-
-  img {
-    width: 80px;
   }
 
   div {

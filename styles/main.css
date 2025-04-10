@@ -110,6 +110,16 @@ div.item1 {
   margin-right: 10px;
 }
 
+pre {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+code {
+  font-family: monospace;
+  font-size: 16px;
+}
+
 .entrytitle {
   font-size: 32px;
   text-decoration: underline;
@@ -176,7 +186,7 @@ div.item1 {
 .pushedIt {
   font-style: italic;
   font-weight: bold;
-  font-size: 32;
+  font-size: 20px;
 }
 
 .hidden {

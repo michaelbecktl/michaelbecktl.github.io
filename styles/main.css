@@ -13,7 +13,6 @@
 }
 
 * {
-  background-color: blanchedalmond;
   font-family: 'Funnel Sans', 'Trebuchet MS', Arifsal, sans-serif;
   box-sizing: border-box;
 }
@@ -32,6 +31,7 @@ header {
   z-index: 1;
 }
 body {
+  background-color: blanchedalmond;
   padding: 0px 0px;
 }
 
@@ -46,10 +46,7 @@ a.hover:hover {
 }
 
 h1 {
-  background-color: #ffd19f;
   font-size: clamp(1.5rem, 8vw, 5rem);
-  border: solid;
-  border-color: #ffd19f;
   padding: 30px;
   margin-bottom: 0;
 }
@@ -94,6 +91,17 @@ li.nav:hover {
   text-decoration: underline;
 }
 
+article {
+  background-color: #fcdcb2;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-left: min(5%, 10em);
+  margin-right: min(5%, 10em);
+  margin-bottom: min(5%, 10em);
+  box-shadow: -8px 8px 5px rgb(22, 8, 0);
+  border-radius: 15px;
+}
+
 p {
   margin-left: 5%;
   margin-right: 5%;
@@ -134,11 +142,14 @@ div.item1 {
 pre {
   margin-left: 5%;
   margin-right: 5%;
+  background-color: hsla(0, 0%, 9%, 0.911);
+  color: white;
+  border-radius: 10px;
 }
 
 code {
   font-family: 'Space Mono', monospace;
-  font-size: 16px;
+  font-size: clamp(12px, 1vw, 16px);
 }
 
 .entrytitle {

@@ -19,134 +19,139 @@
     </nav>
   </header>
   <body>
-    <div>
-      <h2 class="pagetitle">Javascript Fundamentals</h2>
-      <p>
-        Last week, we've been introduced to HTML and CSS. This week, we're
-        touching on Javascript, but how is Javascript different from the other
-        two languages we have learned? Let's discuss.
-      </p>
-      <p>
-        HTML and CSS are codes which basically the builders and designers. They
-        make up the core of a webpage, and redecorate to make them pretty on the
-        eyes. Javascript however, consists of tools that can help make a webpage
-        more interactive. This can range from animations, like making buttons do
-        something to parts of the webpage or even changing content when being
-        prompted to. Much like the button below this paragraph.
-      </p>
-      <br />
+    <article>
       <div>
-        <p id="pushedButton">
-          <button id="pushMe">Push Me!</button>
+        <h2 class="pagetitle">Javascript Fundamentals</h2>
+        <p>
+          Last week, we've been introduced to HTML and CSS. This week, we're
+          touching on Javascript, but how is Javascript different from the other
+          two languages we have learned? Let's discuss.
         </p>
-      </div>
-      <br />
-      <h3>Control Flow & Loops</h3>
-      <p>
-        When we talk about control flow, it is the way a script of code is being
-        read. As we learned in HTML and CSS, codes are read from top to bottom
-        and executed in order. With codes written at the bottom of a script
-        possibly overwriting what's written beforehand. With Javascript, we can
-        make use of
-        <b>conditionals</b> and <b>loops</b> to change this control flow.
-      </p>
-      <p>
-        When we set a <b>conditional</b> is set, it allows a function or action
-        written in the code script to either perform immediately or to wait for
-        a condition to be fulfilled before executing. For example, if you wanted
-        to cook dinner, but you had no groceries, your options are probably to
-        get some or just order takeout. Let's put this analogy example in code:
-      </p>
-      <pre><code>
+        <p>
+          HTML and CSS are codes which basically the builders and designers.
+          They make up the core of a webpage, and redecorate to make them pretty
+          on the eyes. Javascript however, consists of tools that can help make
+          a webpage more interactive. This can range from animations, like
+          making buttons do something to parts of the webpage or even changing
+          content when being prompted to. Much like the button below this
+          paragraph.
+        </p>
+        <br />
+        <div>
+          <p id="pushedButton">
+            <button id="pushMe">Push Me!</button>
+          </p>
+        </div>
+        <br />
+        <h3>Control Flow & Loops</h3>
+        <p>
+          When we talk about control flow, it is the way a script of code is
+          being read. As we learned in HTML and CSS, codes are read from top to
+          bottom and executed in order. With codes written at the bottom of a
+          script possibly overwriting what's written beforehand. With
+          Javascript, we can make use of
+          <b>conditionals</b> and <b>loops</b> to change this control flow.
+        </p>
+        <p>
+          When we set a <b>conditional</b> is set, it allows a function or
+          action written in the code script to either perform immediately or to
+          wait for a condition to be fulfilled before executing. For example, if
+          you wanted to cook dinner, but you had no groceries, your options are
+          probably to get some or just order takeout. Let's put this analogy
+          example in code:
+        </p>
+        <pre><code>
       if (groceries === 0) {
         orderTakeout()
         } else {
         makeDinner()
       }
       </code></pre>
-      <p>
-        Where as for <b>loops</b>, they are functions that allow Javascript to
-        execute a certain actions a specified amount of times in a compact line
-        of codes. It helps so we don't have to copy and paste certain codes all
-        over the script!
-      </p>
-      <h3>What is a DOM?</h3>
-      <p>
-        A DOM (Document Object Model) in technical terms is an interface that
-        makes up a page, separating it into diferrent sections and representing
-        them as "nodes" or "objects". These representations allow the page to be
-        manipulated by languages like Javascript. But I don't know what these
-        words mean? Our webpage is made out of HTML, the browser we use to view
-        the webpage, takes all the HTML and translates it into a DOM. The DOM
-        acts like an object that allows Javascript to interact with it and
-        change things accordingly. In a way it's an interface that lets the two
-        languages co-exist.
-      </p>
-      <p>
-        We can interact with the DOM using Javascript, which we can use to
-        retrieve information or alter codings in a webpage. We can use it to
-        find and/or change properties of elements in HTML, or even remove an
-        image. DevTools in Google Chrome can also be used to execute these
-        codes.Example of such codes are:
-      </p>
-      <pre><code id="codeSample">
+        <p>
+          Where as for <b>loops</b>, they are functions that allow Javascript to
+          execute a certain actions a specified amount of times in a compact
+          line of codes. It helps so we don't have to copy and paste certain
+          codes all over the script!
+        </p>
+        <h3>What is a DOM?</h3>
+        <p>
+          A DOM (Document Object Model) in technical terms is an interface that
+          makes up a page, separating it into diferrent sections and
+          representing them as "nodes" or "objects". These representations allow
+          the page to be manipulated by languages like Javascript. But I don't
+          know what these words mean? Our webpage is made out of HTML, the
+          browser we use to view the webpage, takes all the HTML and translates
+          it into a DOM. The DOM acts like an object that allows Javascript to
+          interact with it and change things accordingly. In a way it's an
+          interface that lets the two languages co-exist.
+        </p>
+        <p>
+          We can interact with the DOM using Javascript, which we can use to
+          retrieve information or alter codings in a webpage. We can use it to
+          find and/or change properties of elements in HTML, or even remove an
+          image. DevTools in Google Chrome can also be used to execute these
+          codes.Example of such codes are:
+        </p>
+        <pre><code id="codeSample">
       // Removing this text code sample //
       document.getElementById('codeSample').innerHTML = '&lt;img src="../images/its-gone.gif"&gt;'
       </code></pre>
-      <h3>Difference between Arrays and Objects</h3>
-      <p>
-        An <b>array</b> is like a box of parameters or items that you put
-        inside, that are listed in order. The items that are placed inside an
-        array are also assigned numbered indexes starting from zero. This means
-        if I put an example array like below, apple would be [0] and pear would
-        be [2].
-      </p>
-      <pre><code>
+        <h3>Difference between Arrays and Objects</h3>
+        <p>
+          An <b>array</b> is like a box of parameters or items that you put
+          inside, that are listed in order. The items that are placed inside an
+          array are also assigned numbered indexes starting from zero. This
+          means if I put an example array like below, apple would be [0] and
+          pear would be [2].
+        </p>
+        <pre><code>
       let fruits = [apple, banana, pear, pineapple]
       </code></pre>
-      <p>
-        An <b>object</b> can contain properties defined by keys and values
-        assigned to them, unlike arrays. This gives objects characteristics
-        instead of just being a name. For example:
-      </p>
-      <pre><code>
+        <p>
+          An <b>object</b> can contain properties defined by keys and values
+          assigned to them, unlike arrays. This gives objects characteristics
+          instead of just being a name. For example:
+        </p>
+        <pre><code>
       let person = {
         name: 'Michael'
         age: 33
         occupation: 'Chef'
       }
       </code></pre>
-      <p>
-        In short, objects are useful when we need to assign a lot parameters
-        into one single item. Where as array is good for listing down items and
-        used for grouping. Objects can also be put into arrays if needed.
-      </p>
-      <h3>Functions</h3>
-      <p>
-        Functions are a convenient tool in Javascript that lets you do multiple
-        lines of coding compacted into one. It essentially like "naming" a set
-        of codes which you can then call at anytime to make these set of codes
-        happen, without needing to retype the entire thing again over multiple
-        occasions.
-      </p>
-      <pre><code>
+        <p>
+          In short, objects are useful when we need to assign a lot parameters
+          into one single item. Where as array is good for listing down items
+          and used for grouping. Objects can also be put into arrays if needed.
+        </p>
+        <h3>Functions</h3>
+        <p>
+          Functions are a convenient tool in Javascript that lets you do
+          multiple lines of coding compacted into one. It essentially like
+          "naming" a set of codes which you can then call at anytime to make
+          these set of codes happen, without needing to retype the entire thing
+          again over multiple occasions.
+        </p>
+        <pre><code>
           function ateCandy() {
             candyCount--
             document.getElementById('candyCount').innerHTML = 'candyCount'
             alert("You ate a candy!")
         }
       </code></pre>
-      <p>
-        In the example code above, let's assume there was multiple buttons that
-        let's you eat a candy everytime you click it. In order to get each
-        button to work the same way, they would all have to include the three
-        lines below <code>function ateCandy()</code>. But with functions, these
-        three codes have been assigned to the <code>ateCandy()</code>, all I
-        have to do is use <code>ateCandy()</code> in each button to subsequently
-        activate those three lines, without the need to copy paste the entire
-        thing in multiple sections!
-      </p>
-    </div>
+        <p>
+          In the example code above, let's assume there was multiple buttons
+          that let's you eat a candy everytime you click it. In order to get
+          each button to work the same way, they would all have to include the
+          three lines below <code>function ateCandy()</code>. But with
+          functions, these three codes have been assigned to the
+          <code>ateCandy()</code>, all I have to do is use
+          <code>ateCandy()</code> in each button to subsequently activate those
+          three lines, without the need to copy paste the entire thing in
+          multiple sections!
+        </p>
+      </div>
+    </article>
 
     <script src="../java.js"></script>
   </body>

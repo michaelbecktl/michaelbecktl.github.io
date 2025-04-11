@@ -21,7 +21,11 @@ header {
   text-align: center;
   position: sticky;
   top: 0;
-  background-color: #ffd19f;
+  /* Old Code*/
+  /* background-color: #ffd19f; */
+  background-image: url(../images/izakayastreet.jpg);
+  background-size: cover;
+  background-position-y: -300px;
   border: solid;
   border-color: rgb(117, 53, 0);
   border-radius: 15px;
@@ -51,6 +55,11 @@ h1 {
   margin-bottom: 0;
 }
 
+.maintitle {
+  color: white;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
 h2 {
   font-size: clamp(1.2rem, 3vw, 2rem);
   margin-left: 5%;
@@ -64,26 +73,35 @@ h3 {
 }
 
 .nav {
-  background-color: #ffd19f;
+  /* Old Code*/
+
+  /* background-color: #ffd19f;
   border: solid;
-  border-color: #ffd19f;
+  border-color: #ffd19f; */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #fdbf7db6;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 li.nav {
   display: inline-block;
-  margin: 10px 30px;
+  margin: 0px 0px;
   padding: 10px 30px;
-  background-color: #fdbf7d;
-  border: solid;
-  border-color: white;
-  border-radius: 30%;
+  background-color: #fdbf7d00;
+  /* border: solid;
+  border-color: rgba(48, 28, 5, 0.842);
+  border-radius: 30%; */
   font-weight: bold;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 li.nav:hover {
-  background-color: #ffaf58;
+  background-color: #ffae58c4;
 }
 
 .pagetitle {
@@ -109,17 +127,29 @@ p {
 }
 
 table {
-  margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
   border: solid;
   border-radius: 15px;
   border-color: #ffb38a;
+  font-weight: bold; */
+  background-color: #fcdcb2;
+  padding: 2em 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: min(5%, 10em);
+  box-shadow: -8px 8px 5px rgb(22, 8, 0);
+  border-radius: 15px;
+}
+
+th {
   font-weight: bold;
 }
 
 td {
   margin-left: 10px;
   margin-right: 10px;
+  font-weight: bold;
 }
 
 img {
@@ -269,6 +299,10 @@ code {
     text-decoration: underline;
   }
 
+  header {
+    background-position-y: -50px;
+  }
+
   .blogdesc {
     font-size: 0.7rem;
   }
@@ -319,6 +353,10 @@ code {
 @media (max-width: 500px) {
   .blogdesc {
     font-size: 0.7rem;
+  }
+
+  header {
+    background-position-y: 0px;
   }
 
   .entrytitle {

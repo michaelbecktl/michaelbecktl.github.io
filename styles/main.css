@@ -127,6 +127,21 @@ p {
 }
 
 table {
+  padding: 1em 1em;
+}
+
+table,
+th,
+td {
+  border: solid;
+  border-style: double;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  padding: 1em 1em;
+}
+
+table.album {
   /* margin-left: auto;
   margin-right: auto;
   border: solid;
@@ -140,6 +155,8 @@ table {
   margin-bottom: min(5%, 10em);
   box-shadow: -8px 8px 5px rgb(22, 8, 0);
   border-radius: 15px;
+  border: none;
+  border-collapse: separate;
 }
 
 th {
@@ -150,6 +167,12 @@ td {
   margin-left: 10px;
   margin-right: 10px;
   font-weight: bold;
+}
+
+th.album,
+td.album {
+  border: none;
+  padding: 0;
 }
 
 img {

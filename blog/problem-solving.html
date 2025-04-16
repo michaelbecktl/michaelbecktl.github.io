@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Problem Solving</title>
+    <meta charset="UTF-8" />
+    <link href="../styles/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+  </head>
+
+  <header>
+    <h1 class="maintitle">Michael Beck's Blog</h1>
+    <nav>
+      <ul class="nav">
+        <li class="nav"><a href="../index.html">Home</a></li>
+        <li class="nav"><a href="../blog.html">Blog</a></li>
+        <li class="nav"><a href="../about.html">About</a></li>
+        <li class="nav"><a href="../album.html">Album</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <article>
+      <h2 class="pagetitle">Problem Solving</h2>
+      <p>
+        This week has been a whole lotta Javascript! With introductions to new
+        methods and Javascript Katas, I was able to learn a lot of new tools and
+        practice them in the Katas. How did it exactly go? One thing for sure,
+        there was a lot of problem solving.
+      </p>
+      <h3>Act 1: The Simple Problem</h3>
+      <p>
+        In the 2nd Kata, for "Manipulating Objects", I was stuck at number 8 for
+        such a long time. The prompt was:
+      </p>
+      <pre><code
+        >   Add a ben property to the value of the terah children property. ben should be an object with the key name and the value "Ben".</code
+      ></pre>
+      <p>
+        I attempted to do it the same way as I did for Adam in the first part of
+        the exercise, which kept crashing the test or returning a result of
+        undefined.
+      </p>
+      <p>
+        After trying different codes, I was extremely frustrated and convinced
+        that I misunderstood the prompt. When I realised I might've overlooked
+        something and decided to go through the Rubber Ducky method. I've taken
+        apart the question and decided to tackle it as literal as how it was
+        worded, and that was when I realised that the prompt wanted me to issue
+        'ben' as a
+        <b>property</b>, and not an <b>object</b> like I did with Adam. And that
+        'ben' the <b>object</b> was suppose to be the <b>value</b> of Ben.
+      </p>
+      <p>
+        If anything I've learned, its to read the prompt carefully and not
+        overthink the solution. Perhaps breaking prompts down into proper
+        pseudocodes was a better way to strategize in the future, although to be
+        fair, the prompt was very short and straight-forward.
+      </p>
+      <h3>Act 2: The Not-So-Simple Problem</h3>
+      <p>
+        The Super FlipFlop challenge has got to be the most interesting one out
+        of all Katas. My initial solution was to run a <b>for.. of</b> loop to
+        individually run them through the flipflop() function. The issue is the
+        return at the end sometimes did not come in arrays, which fails the
+        first prompt and then sometimes it wouldn't only run the function on the
+        first item in each array.
+      </p>
+      <p>
+        I did some research on different Javascript methods and loops to find
+        out which one was a more suitable line to use. Eventually I settled on
+        using the .maps method on a basic loop to be able to flipflop() each
+        array. In doing so, I succeeded all the test except the very first test,
+        which is that if presented with no parameters, the result should return
+        an empty array. I chose to put a conditional where if the
+        <code>"parameters &lt; 0"</code>, the return would just be an empty
+        array and would not call the flipflop() function.
+      </p>
+      <h3>Reflect on problem-solving techniques/processes</h3>
+      <p>
+        <b>Pseudocode:</b> I've applied a few pseudocodes to help plan out when
+        attempting complex prompts, I thought it was really helpful to also just
+        pseudocode something that was done and leave aside, while attempting a
+        different solution so I wouldn't forget my progress from before. I'm
+        confident in my usage of Pseudocodes.<br /><br />
+        <b>Trying something:</b> I've went through a lot of trial and errors,
+        most of my attempts are looking up new codes and trying them out to see
+        what they do and if they work.<br /><br />
+        <b>Rubber ducky method:</b> It definitely made a lot of difference to
+        look at problems from a smaller part-by-part perspective and get one
+        component working before the next. I will probably need to work on
+        making this a habit.<br /><br />
+        <b>Reading error messages:</b> I'm confident in reading error messages
+        and using them to debug issues, they've been guiding my solutions for
+        most of it. <br /><br />
+        <b>Console.logging:</b> I've still not gotten a good practice of using
+        console.logging things until I get stuck. There was one problem where I
+        had solved the issue and I forgot to change console.log into return, so
+        that was also pretty funny. <br /><br />
+        <b>Googling:</b> I probably can't say it enough, but Google has always
+        been my source of information before I even started DevAcademy. I find
+        it easy to look up solutions that I need with proper search keywords.<br /><br />
+        <b>Asking peers/coaches for help:</b> I'll admit I haven't been going to
+        anyone for help but I probably should start. I'm been giving myself my
+        own timebox to solve a solution, and I would ask someone for help if I
+        was unable to complete a task in time. So far, I have been able to
+        manage in within my own deadline.<br /><br />
+        <b>Improve process with reflection:</b> I'll definitely try to improve
+        on my problem-solving process based on today's reflection,
+        self-realization is the first step to improvement.
+      </p>
+      <h3>Asking for Help</h3>
+      <p>
+        Being stuck on "manipulating objects" part for a long time was really
+        pushing me to ask for help. I was quite reluctant on doing so because I
+        was so convinced that it was a simple problem that I couldn't figure
+        out. I did however set a deadline for myself, that if I could not solve
+        it, I would eventually ask the coaches or homegroup for help.
+      </p>
+    </article>
+  </body>
+</html>
